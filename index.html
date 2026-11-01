@@ -192,7 +192,7 @@ p{text-wrap:pretty}
 .dfy-lead{max-width:40rem;margin:0 auto;text-align:center;font-size:1.02rem;line-height:2;color:var(--ink-300)}
 .dfy-lead strong{color:#fff;font-weight:700}
 .dfy-figure{max-width:40rem;margin:2.2rem auto 0}
-.dfy-figure img{width:100%;height:auto;border:1px solid rgba(213,185,114,.25);border-radius:2px}
+.dfy-figure img{width:100%;height:auto;display:block}
 .dfy-figure figcaption{margin-top:.65rem;text-align:center;font-size:.72rem;line-height:1.8;color:var(--ink-400)}
 .flow{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;max-width:40rem;margin:2.4rem auto 0;padding:0;list-style:none}
 .flow li{text-align:center}
@@ -358,12 +358,6 @@ p{text-wrap:pretty}
   body{padding-block:0}
 }
 
-.dfy-preview{position:relative;padding:2rem 1rem 3rem;border:1px solid rgba(213,185,114,.25);background:#111;min-height:17rem;direction:rtl}
-.dfy-desktop{width:85%;min-height:13rem;padding:1.5rem;border:5px solid #444;border-bottom-width:14px;border-radius:8px;background:#faf8f1;color:#18181b}
-.dfy-desktop>span{display:block;font-size:.75rem;color:#74602e}.dfy-desktop>strong{display:block;margin:1.5rem 0;font-size:clamp(.9rem,3vw,1.5rem)}
-.dfy-pages{display:flex;gap:.5rem}.dfy-pages span{flex:1;padding:1rem .2rem;background:#eae3d1;text-align:center;font-size:.65rem}
-.dfy-mobile{position:absolute;bottom:1rem;left:1rem;width:24%;max-width:8rem;min-height:11rem;padding:1rem .5rem;border:5px solid #555;border-radius:14px;background:#faf8f1;color:#18181b;text-align:center;font-size:.65rem}
-.dfy-mobile strong{display:block;margin:1rem 0}.dfy-mobile i{display:block;height:1.8rem;margin:.5rem 0;background:#eae3d1}
 .dfy-lead+.dfy-lead{margin-top:.9rem}
 
 /* DFY: hierarchy, deliverables, training, and service timeline. */
@@ -384,13 +378,6 @@ p{text-wrap:pretty}
 #dfy .dfy-product-layout{display:grid;grid-template-columns:1fr 1fr;gap:2rem;align-items:center;margin-top:2.4rem}
 #dfy .dfy-copy-kicker{font-size:1.03rem}
 #dfy .dfy-figure{margin:0;min-width:0}
-#dfy .dfy-preview{padding:1.25rem .75rem 2.6rem;min-height:14rem;background:#1b1b1e}
-#dfy .dfy-desktop{padding:1rem .6rem;min-height:11rem;width:90%;border-width:4px;border-bottom-width:10px}
-#dfy .dfy-desktop>strong{font-size:clamp(.8rem,2vw,1.1rem);margin:1.25rem 0}
-#dfy .dfy-pages{gap:.3rem}
-#dfy .dfy-pages span{font-size:.57rem;padding:.8rem .1rem}
-#dfy .dfy-mobile{min-height:9rem;width:28%;left:.65rem;bottom:.7rem;padding:.5rem .25rem;border-width:4px;font-size:.55rem}
-#dfy .dfy-mobile strong{margin:.7rem 0}
 #dfy .dfy-figure figcaption{font-size:.68rem;text-align:start;line-height:1.85;color:var(--ink-400)}
 #dfy .dfy-control{display:grid;grid-template-columns:auto 1fr;gap:1.5rem;margin-top:2rem;padding:1.4rem 0;border-block:1px solid rgba(255,255,255,.12);font-size:.94rem;color:var(--ink-300)}
 #dfy .dfy-control-label{color:var(--gold-300);font-weight:700;font-size:1.1rem}
@@ -912,7 +899,7 @@ p{text-wrap:pretty}
 <h3>أنت تجهّز منتجك وعرضك… ونحن نبني لك موقع مشروعك وفانل البيع وننشرهما على دومينك الخاص!</h3></header>
 <div class="dfy-product-layout">
 <div class="dfy-copy"><p class="dfy-copy-kicker"><strong>نعم، قرأت ذلك صحيحًا!</strong></p><p>بدل أن تبدأ من صفحة بيضاء، وتضيع وقتك في تصميم الموقع وبناء صفحات البيع وربط الدومين والاستضافة…</p><p><strong>فريقنا يتولى بناء موقعك وصفحات الفانل نيابةً عنك، باستخدام Astro، ويسلّمك المشروع لتصبح أنت مالكه والمتحكم فيه.</strong></p></div>
-<figure class="dfy-figure reveal"><div class="dfy-preview" role="img" aria-label="تصور لموقع المشروع على الكمبيوتر والهاتف مع صفحات فانل البيع"><div class="dfy-desktop"><span>موقع مشروعك</span><strong>منتجك. علامتك. موقعك.</strong><div class="dfy-pages"><span>صفحة البيع</span><span>الويبينار</span><span>صفحة الشكر</span></div></div><div class="dfy-mobile"><span>موقعك</span><strong>على كل شاشة</strong><i></i><i></i></div></div><figcaption>تصور توضيحي لموقع المشروع وصفحات الفانل؛ يُكمل العميل تكاملات الدفع والبريد والتسليم بمساعدة التدريب.</figcaption></figure>
+<figure class="dfy-figure reveal"><img src="assets/done-for-you-launch-funnel.webp" width="1448" height="1086" loading="lazy" decoding="async" alt="مخطط الفانل الجاهز لك بالكامل: صفحة بيع، صفحة دفع، صفحة شكر، سلسلة إيميلات، وتسليم المنتج الرقمي"><figcaption>تصور توضيحي لموقع المشروع وصفحات الفانل؛ يُكمل العميل تكاملات الدفع والبريد والتسليم بمساعدة التدريب.</figcaption></figure>
 </div>
 <div class="dfy-control"><p class="dfy-control-label">والأجمل؟</p><div><p>لن تحتاج إلى الاعتماد علينا كلما أردت تغيير عنوان أو صورة أو إضافة صفحة جديدة.</p><p><strong>سنعلّمك كيف تدير موقعك وتطوّره بنفسك باستخدام أدوات الذكاء الاصطناعي مثل Codex وClaude Code وOpenCode!</strong></p></div></div>
 <ul class="flow reveal" aria-label="نطاق خدمة بناء الموقع"><li><strong>موقع مشروعك</strong><span>WEBSITE</span></li><li><strong>صفحات البيع</strong><span>SALES FUNNEL</span></li><li><strong>الدومين والاستضافة</strong><span>DOMAIN &amp; HOSTING</span></li><li><strong>إدارة الموقع بالذكاء الاصطناعي</strong><span>AI-POWERED CONTROL</span></li></ul>
